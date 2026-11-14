@@ -28,12 +28,12 @@ pretrained_ensemble.py / run_resnet34_fulltrain.py / evaluate_fit_pretrained.py 
 | 报告小节 | 实验 | 代码 | Kaggle Notebook | 结果分析 |
 |---|---|---|---|---|
 | 第一节 任务与协议 | 数据读取、热图、坐标 RMSE、五折划分；ResNet18 单折基线 | `task3_pipeline.py` | `task3.ipynb` | — |
-| 第二节 2. 骨干网络对比（表 3-1） | ResNet18 / ResNet34 / ConvNeXt / RETFound-Green 及集成 | `pretrained_ensemble.py` | `task3_pretrained_ensemble.ipynb` | — |
+| 第二节 2. 骨干网络对比（表 3-2） | ResNet18 / ResNet34 / ConvNeXt / RETFound-Green 及集成 | `pretrained_ensemble.py` | `task3_pretrained_ensemble.ipynb` | — |
 | 第三节 训练轮数与收敛（图 3-2） | 第 0 折逐轮曲线；统一第 80 轮对照 | `task3_kaggle_cv.py` | `task3_resnet34_5fold_kaggle.ipynb` | `analyze_common_epoch.py` |
 | | ResNet34 全量 43 轮单模型 | `run_resnet34_fulltrain.py` | `task3_resnet34_fulltrain.ipynb` | — |
-| 第四节 1. 分辨率、双尺度集成、TTA（表 3-3） | 320 / 512 / 翻转 TTA / 320+512 等权 | `task3_kaggle_cv.py` | `task3_resnet34_5fold_kaggle.ipynb` | `analyze_kaggle_cv_results.py` |
-| 第四节 2. 局部精修与回退（表 3-4） | 粗定位 + 768 像素 ROI 精修，256 像素回退 | `task3_kaggle_refine.py` | `task3_resnet34_refine_kaggle.ipynb` | `analyze_refine_results.py`、`diagnose_refinement_reversal.py` |
-| 第五节 榜单成绩（表 3-5） | 提交文件之间的预测差异、留出模型与全量模型的预测稳定性 | — | — | `audit_public_gap.py` |
+| 第四节 1. 分辨率、双尺度集成、TTA（表 3-4） | 320 / 512 / 翻转 TTA / 320+512 等权 | `task3_kaggle_cv.py` | `task3_resnet34_5fold_kaggle.ipynb` | `analyze_kaggle_cv_results.py` |
+| 第四节 2. 局部精修与回退（表 3-5） | 粗定位 + 768 像素 ROI 精修，256 像素回退 | `task3_kaggle_refine.py` | `task3_resnet34_refine_kaggle.ipynb` | `analyze_refine_results.py`、`diagnose_refinement_reversal.py` |
+| 第五节 榜单成绩（表 3-6） | 提交文件之间的预测差异、留出模型与全量模型的预测稳定性 | — | — | `audit_public_gap.py` |
 | 第六节 2. FLAIR 迁移 | FLAIR 编码器 vs ImageNet ResNet50 | `task3_flair_transfer.py` | `task3_flair_transfer_kaggle.ipynb` | `analyze_flair_transfer.py` |
 | 第六节 2. ZIAN 探索 | 直接推理与微调 | `run_zian_transfer.py`、`finetune_zian.py` | — | — |
 | 第七节 小结（上下文融合精修） | 局部 ROI + 整图上下文 | `task3_context_refine_v4.py` | `task3_context_refine_v4_kaggle.ipynb` | `analyze_context_v4_results.py` |

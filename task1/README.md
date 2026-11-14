@@ -16,12 +16,12 @@
 
 | 报告小节 | 对应代码 |
 |---|---|
-| 第二节 骨干网络选择（表 1-2、图 1-2） | `train.py`（`MODELS` 列表中的三种骨干） |
-| 第三节 分辨率、训练轮数、学习率（表 1-4、图 1-3） | `ablation.py` 中的 `img_224`、`epochs_5/15`、`lr_3e-5/3e-4` |
-| 第四节 预训练、旋转增强、标签平滑、随机深度（表 1-5、图 1-4） | `ablation.py` 中的 `no_pretrain`、`no_rotate`、`no_label_smoothing`、`drop_path_1x` |
-| 第四节 TTA 视角组合（表 1-6） | `ablation.py summary`（直接用已保存的逐视角概率计算，无需重训） |
-| 第四节 HSV 去背景（表 1-7、图 1-5） | `train.py` 中设 `REMOVE_BG = True` |
-| 第五节 困难样本与背景线索（表 1-8、图 1-6、图 1-7） | `analysis/facts.py` |
+| 第二节 骨干网络选择（表 1-3、图 1-2） | `train.py`（`MODELS` 列表中的三种骨干） |
+| 第三节 分辨率、训练轮数、学习率（表 1-5、图 1-4） | `ablation.py` 中的 `img_224`、`epochs_5/15`、`lr_3e-5/3e-4` |
+| 第四节 预训练、旋转增强、标签平滑、随机深度（表 1-6、图 1-5） | `ablation.py` 中的 `no_pretrain`、`no_rotate`、`no_label_smoothing`、`drop_path_1x` |
+| 第四节 TTA 视角组合（表 1-7） | `ablation.py summary`（直接用已保存的逐视角概率计算，无需重训） |
+| 第四节 HSV 去背景（表 1-8、图 1-6） | `train.py` 中设 `REMOVE_BG = True` |
+| 第五节 困难样本与背景线索（表 1-9、图 1-7、图 1-8） | `analysis/facts.py` |
 
 ## 运行方式
 
