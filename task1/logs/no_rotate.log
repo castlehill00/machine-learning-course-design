@@ -1,0 +1,71 @@
+数据目录: E:\machine learning design\task1\2026task1\dataset-for-task2\dataset-for-task2 | 设备: cuda
+类别: ['Black-grass', 'Common wheat', 'Loose Silky-bent', 'Scentless Mayweed', 'Sugar beet']
+训练图 500（5 折）
+[convnext_tiny] 第 1/5 折
+  epoch  1 | loss 1.2661
+  epoch  2 | loss 0.6506
+  epoch  3 | loss 0.5641
+  epoch  4 | loss 0.5389
+  epoch  5 | loss 0.4765
+  epoch  6 | loss 0.4472
+  epoch  7 | loss 0.4339
+  epoch  8 | loss 0.4312
+  epoch  9 | loss 0.4286
+  epoch 10 | loss 0.4211
+[convnext_tiny] 第 1 折验证准确率 0.9400
+[convnext_tiny] 第 2/5 折
+  epoch  1 | loss 1.2780
+  epoch  2 | loss 0.7088
+  epoch  3 | loss 0.6106
+  epoch  4 | loss 0.5463
+  epoch  5 | loss 0.5069
+  epoch  6 | loss 0.4594
+  epoch  7 | loss 0.4450
+  epoch  8 | loss 0.4306
+  epoch  9 | loss 0.4288
+  epoch 10 | loss 0.4307
+[convnext_tiny] 第 2 折验证准确率 0.9300
+[convnext_tiny] 第 3/5 折
+  epoch  1 | loss 1.3122
+  epoch  2 | loss 0.7469
+  epoch  3 | loss 0.6063
+  epoch  4 | loss 0.5439
+  epoch  5 | loss 0.5090
+  epoch  6 | loss 0.4899
+  epoch  7 | loss 0.4395
+  epoch  8 | loss 0.4355
+  epoch  9 | loss 0.4362
+  epoch 10 | loss 0.4263
+[convnext_tiny] 第 3 折验证准确率 0.9200
+[convnext_tiny] 第 4/5 折
+  epoch  1 | loss 1.2680
+  epoch  2 | loss 0.7069
+  epoch  3 | loss 0.5778
+  epoch  4 | loss 0.5306
+  epoch  5 | loss 0.5076
+  epoch  6 | loss 0.4621
+  epoch  7 | loss 0.4391
+  epoch  8 | loss 0.4304
+  epoch  9 | loss 0.4208
+  epoch 10 | loss 0.4240
+[convnext_tiny] 第 4 折验证准确率 0.9300
+[convnext_tiny] 第 5/5 折
+  epoch  1 | loss 1.4522
+  epoch  2 | loss 0.8441
+  epoch  3 | loss 0.6424
+  epoch  4 | loss 0.5607
+  epoch  5 | loss 0.5200
+  epoch  6 | loss 0.4783
+  epoch  7 | loss 0.4573
+  epoch  8 | loss 0.4392
+  epoch  9 | loss 0.4365
+  epoch 10 | loss 0.4288
+[convnext_tiny] 第 5 折验证准确率 0.9100
+[convnext_tiny] 5 折总准确率 0.9260 | 目前集成 0.9260
+                   Black-grass  Common wheat  Loose Silky-bent  Scentless Mayweed  Sugar beet
+Black-grass                 85             4                11                  0           0
+Common wheat                 4            93                 0                  0           3
+Loose Silky-bent            14             0                86                  0           0
+Scentless Mayweed            0             0                 0                100           0
+Sugar beet                   0             1                 0                  0          99
+已保存 E:\machine learning design\task1\logs\no_rotate.json

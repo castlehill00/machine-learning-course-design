@@ -1,0 +1,46 @@
+数据目录: E:\machine learning design\task1\2026task1\dataset-for-task2\dataset-for-task2 | 设备: cuda
+类别: ['Black-grass', 'Common wheat', 'Loose Silky-bent', 'Scentless Mayweed', 'Sugar beet']
+训练图 500（5 折）
+[convnext_tiny] 第 1/5 折
+  epoch  1 | loss 1.2727
+  epoch  2 | loss 0.7222
+  epoch  3 | loss 0.6255
+  epoch  4 | loss 0.5533
+  epoch  5 | loss 0.5281
+[convnext_tiny] 第 1 折验证准确率 0.9200
+[convnext_tiny] 第 2/5 折
+  epoch  1 | loss 1.4946
+  epoch  2 | loss 0.8460
+  epoch  3 | loss 0.6271
+  epoch  4 | loss 0.5570
+  epoch  5 | loss 0.5414
+[convnext_tiny] 第 2 折验证准确率 0.8900
+[convnext_tiny] 第 3/5 折
+  epoch  1 | loss 1.2772
+  epoch  2 | loss 0.6905
+  epoch  3 | loss 0.5973
+  epoch  4 | loss 0.5644
+  epoch  5 | loss 0.5156
+[convnext_tiny] 第 3 折验证准确率 0.8900
+[convnext_tiny] 第 4/5 折
+  epoch  1 | loss 1.3694
+  epoch  2 | loss 0.7655
+  epoch  3 | loss 0.6425
+  epoch  4 | loss 0.5892
+  epoch  5 | loss 0.5581
+[convnext_tiny] 第 4 折验证准确率 0.9400
+[convnext_tiny] 第 5/5 折
+  epoch  1 | loss 1.3330
+  epoch  2 | loss 0.7331
+  epoch  3 | loss 0.6100
+  epoch  4 | loss 0.5535
+  epoch  5 | loss 0.5390
+[convnext_tiny] 第 5 折验证准确率 0.9200
+[convnext_tiny] 5 折总准确率 0.9120 | 目前集成 0.9120
+                   Black-grass  Common wheat  Loose Silky-bent  Scentless Mayweed  Sugar beet
+Black-grass                 79             2                19                  0           0
+Common wheat                 3            96                 0                  0           1
+Loose Silky-bent            16             0                84                  0           0
+Scentless Mayweed            0             0                 0                 99           1
+Sugar beet                   0             1                 0                  1          98
+已保存 E:\machine learning design\task1\logs\epochs_5.json

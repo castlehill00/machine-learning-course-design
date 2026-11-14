@@ -1,0 +1,35 @@
+=== base（最终方案）: MODELS=['convnext_tiny']
+    完成：OOF 准确率 0.9380
+=== no_pretrain（不用 ImageNet 预训练）: MODELS=['convnext_tiny'] PRETRAINED=False
+no_pretrain 失败，见 logs/no_pretrain.log
+跳过已完成的 base
+=== no_pretrain（不用 ImageNet 预训练）: MODELS=['convnext_tiny'] PRETRAINED=False
+    第 1 次运行失败，退出码 3221225477
+跳过已完成的 base
+=== no_pretrain（不用 ImageNet 预训练）: MODELS=['convnext_tiny'] PRETRAINED=False
+    完成：OOF 准确率 0.4880
+=== no_rotate（去掉 90° 旋转增强）: MODELS=['convnext_tiny'] ROTATE=False
+    完成：OOF 准确率 0.9260
+=== no_label_smoothing（去掉标签平滑）: MODELS=['convnext_tiny'] LABEL_SMOOTHING=0.0
+    完成：OOF 准确率 0.9420
+=== drop_path_1x（随机深度用默认强度）: MODELS=['convnext_tiny'] DROP_PATH_SCALE=1.0
+    完成：OOF 准确率 0.9380
+=== img_224（输入 224×224）: MODELS=['convnext_tiny'] IMG_SIZE=224
+    完成：OOF 准确率 0.9200
+=== seed_1（最终方案，换随机种子）: MODELS=['convnext_tiny'] SEED=1
+    完成：OOF 准确率 0.9340
+跳过已完成的 base
+跳过已完成的 no_pretrain
+跳过已完成的 no_rotate
+跳过已完成的 no_label_smoothing
+跳过已完成的 drop_path_1x
+跳过已完成的 img_224
+跳过已完成的 seed_1
+=== epochs_5（训练 5 轮）: MODELS=['convnext_tiny'] EPOCHS=5
+    完成：OOF 准确率 0.9120
+=== epochs_15（训练 15 轮）: MODELS=['convnext_tiny'] EPOCHS=15
+    完成：OOF 准确率 0.9380
+=== lr_3e-5（学习率 3e-5）: MODELS=['convnext_tiny'] LR=3e-05
+    完成：OOF 准确率 0.9180
+=== lr_3e-4（学习率 3e-4）: MODELS=['convnext_tiny'] LR=0.0003
+    完成：OOF 准确率 0.9300

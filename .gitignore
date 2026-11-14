@@ -1,0 +1,17 @@
+# 数据集（从 Kaggle 下载，不上传）
+2026task*/
+**/train/
+**/test/
+
+# 权重、压缩包、运行输出
+*.pth
+*.ckpt
+*.safetensors
+*.zip
+*_results*/
+*_runtime/
+submission*.csv
+
+# Python / Notebook 缓存
+__pycache__/
+.ipynb_checkpoints/
