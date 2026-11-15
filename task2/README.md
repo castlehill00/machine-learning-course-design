@@ -33,12 +33,18 @@
 
 ## 运行方式
 
-先准备以下文件（比赛数据、权重和大型实验备份不随代码上传）：
+先准备以下文件（比赛数据和预训练权重另行下载，第二轮实验备份通过 GitHub Release 提供）：
 
 1. 比赛数据：`task2/2026task2/fer_data/fer_data/train/`、`test/`，以及 `task2/2026task2/submission.csv`。
-2. 原实验备份：`task2/task2_ablation_backup_round2.zip`。其中保留 `task2_ablation_seed42/split.csv`、各组 `config.json`、`metrics.json`、预测文件与检查点；后续脚本复用该划分和 ResNet18 权重。该文件在本地实验目录保留，代码复查时可补充提供。
+2. 原实验备份：[下载 task2_ablation_backup_round2.zip](https://github.com/castlehill00/machine-learning-course-design/releases/download/task2-ablation-round2/task2_ablation_backup_round2.zip)（210,704,034 字节，约 211 MB；[Release 说明](https://github.com/castlehill00/machine-learning-course-design/releases/tag/task2-ablation-round2)）。下载后将 ZIP 原样放到 `task2/` 目录，无需手动解压。其中保留 `task2_ablation_seed42/split.csv`，以及 baseline、weight_decay、dropout、combined、label_smoothing 五组实验的配置、指标、训练历史、混淆矩阵、验证概率和 `best.pt`。后续脚本直接读取该压缩包，复用划分和 ResNet18 权重。
 3. B2 表情预训练权重：[enet_b2_7.pt](https://raw.githubusercontent.com/sb-ai-lab/EmotiEffLib/main/models/affectnet_emotions/enet_b2_7.pt)，保存至 `task2/.torch/hub/checkpoints/enet_b2_7.pt`。
 4. B2 通用预训练权重：[tf_efficientnet_b2_ns-00306e48.pth](https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/tf_efficientnet_b2_ns-00306e48.pth)，保存至同一检查点目录。`prepare_weights()` 校验文件哈希并转换表情权重，不负责自动下载。
+
+备份 ZIP 的 SHA-256（上传的是未修改的原始备份）：
+
+```text
+cfbc717fb14983a3c2435b23a23ddf6d49d0437f4ade4e4ac93158e8776dc649
+```
 
 在 Kaggle 运行 `task2.ipynb` 时，还需挂载第二轮备份数据集 `task2-ablation-backup-round2`。本地 B2、融合与 TTA 脚本依次运行；后续步骤读取前一步产生的结果与权重，例如：
 

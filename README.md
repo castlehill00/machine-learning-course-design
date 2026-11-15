@@ -25,7 +25,8 @@ taskN/
 
 - **数据集未包含**：从各任务的 Kaggle 比赛页面下载数据，解压到对应任务目录下（例如 `task3/2026task3/`），代码会自动查找。
 - **只使用比赛提供的数据**，没有用外部数据集扩充训练集；用到的预训练权重（ImageNet、EmotiEffLib、RETFound、FLAIR 等）见报告各章参考文献。
-- **模型权重与中间结果未包含**（体积过大）。任务二的后续实验还依赖原第二轮备份，所需文件与预训练下载地址见 `task2/README.md`。任务一的消融实验原始结果较小，保存在 `task1/logs/`。
+- **任务二实验备份**：从 [GitHub Release 下载第二轮消融备份](https://github.com/castlehill00/machine-learning-course-design/releases/download/task2-ablation-round2/task2_ablation_backup_round2.zip)（约 211 MB），原样放到 `task2/` 目录。包含固定划分、五组消融实验的配置、指标、训练记录、验证预测和模型检查点；校验值及其他运行依赖见 [`task2/README.md`](task2/README.md)。
+- **其他模型权重与大型中间结果未随代码包含**。任务一的消融实验原始结果较小，保存在 `task1/logs/`。
 - `analysis/` 中的脚本读取的是 Kaggle 运行后下载的结果目录（如 `kaggle_cv_results_20261025/`），这些结果同样未包含在仓库中。
 
 ## 环境
